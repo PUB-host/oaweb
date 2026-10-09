@@ -1,0 +1,37 @@
+:root{--c:#0f5c6e;--c2:#0b4351;--acc:#ffd166;--bg:#f4f7f8;--tx:#1d2b30;--mut:#5b6b70}
+*{box-sizing:border-box}body{margin:0;font-family:"Segoe UI",Arial,sans-serif;color:var(--tx);background:var(--bg);line-height:1.55}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}a{color:var(--c)}
+.top{background:var(--c);color:#fff}.top-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none}.brand b{display:block;font-size:20px}.brand small{opacity:.8}
+.logo{width:46px;height:46px}
+.site-search{display:flex}.site-search input{padding:7px 10px;border:0;border-radius:4px 0 0 4px;width:220px;font:inherit}
+.site-search button{border:0;background:var(--acc);padding:7px 12px;border-radius:0 4px 4px 0;font:inherit;cursor:pointer}
+nav .menu{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap}
+nav .menu>li{position:relative}nav .menu a{display:block;color:#fff;text-decoration:none;padding:10px 14px}
+nav .menu a:hover,nav .menu a.active{background:var(--c2)}
+.caret{font-size:11px}
+.sub{display:none;position:absolute;left:0;top:100%;list-style:none;margin:0;padding:4px 0;background:#fff;min-width:210px;box-shadow:0 6px 18px rgba(0,0,0,.18);z-index:5;border-radius:0 0 6px 6px}
+.sub a{color:var(--tx)!important}.sub a:hover{background:#e6f1f3!important}
+.has-sub:hover .sub,.has-sub:focus-within .sub{display:block}
+main{background:#fff;margin:22px auto;padding:22px 26px 30px;border-radius:8px;box-shadow:0 1px 4px rgba(0,0,0,.06);min-height:360px}
+h1{color:var(--c2);margin-top:4px}.lead{font-size:18px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:center}.hero img{width:100%;border-radius:8px}
+.btn{display:inline-block;background:var(--c);color:#fff;text-decoration:none;padding:9px 16px;border-radius:5px;border:0;font:inherit;cursor:pointer}
+.btn.ghost{background:#fff;color:var(--c);border:1px solid var(--c)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:22px 0}
+.cards article{border:1px solid #dfe8ea;border-radius:8px;padding:14px 16px}.cards h2{margin:0 0 6px;font-size:19px}
+.news{list-style:none;padding:0}.news li{padding:8px 0;border-bottom:1px solid #eef2f3}.news time{color:var(--mut);margin-right:10px}
+.servicelist p{border-left:4px solid var(--acc);padding:4px 12px;background:#fbfaf3}
+.box{background:#e6f1f3;padding:10px 14px;border-radius:6px}
+.tbl{border-collapse:collapse;width:100%;margin:10px 0}.tbl th,.tbl td{border:1px solid #d5e0e2;padding:7px 10px;text-align:left}.tbl th{background:#eef5f6}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.people div{border:1px solid #dfe8ea;border-radius:8px;padding:12px}.people span{display:block;color:var(--mut)}
+.articles{padding-left:18px}.articles li{margin:8px 0}.articles small{color:var(--mut);margin-left:10px}
+.crumb,.meta{color:var(--mut);font-size:14px}
+.form{max-width:560px}.form label{display:block;margin:10px 0}.form input:not([type=checkbox]):not([type=radio]){display:block;width:100%;padding:8px;margin-top:4px;border:1px solid #b9c7ca;border-radius:4px;font:inherit}
+.form label.inline{display:inline-block;margin-right:16px}.row2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+fieldset{border:1px solid #d5e0e2;border-radius:6px;margin:10px 0}.small{font-size:13px;color:var(--mut)}
+.confirm{font-size:20px;background:#e9f7ef;border:1px solid #9fd5b5;padding:10px 14px;border-radius:6px}
+.results{padding-left:20px}.results li{margin:14px 0}.results a{font-size:18px}.results cite{display:block;color:#0a7d3c;font-style:normal;font-size:13px}.results p{margin:2px 0;color:var(--mut)}
+.foot{background:#1d2b30;color:#cfd8da;padding:18px 0;font-size:14px}.foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.pagecode b{color:#fff;letter-spacing:.5px}.note{margin-top:10px;font-size:12px;opacity:.7}
+@media (max-width:720px){.hero{grid-template-columns:1fr}.row2{grid-template-columns:1fr}.site-search input{width:150px}}
